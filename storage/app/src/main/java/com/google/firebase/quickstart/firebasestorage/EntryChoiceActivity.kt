@@ -14,8 +14,12 @@ class EntryChoiceActivity : BaseEntryChoiceActivity() {
                         Intent(this, com.google.firebase.quickstart.firebasestorage.java.MainActivity::class.java)),
                 Choice(
                         "Kotlin",
-                        "Run the Firebase In App Messaging quickstart written in Kotlin.",
-                        Intent(this, com.google.firebase.quickstart.firebasestorage.kotlin.MainActivity::class.java))
+                        "Run the Firebase Storage quickstart written in Kotlin.",
+                        Intent(this, com.google.firebase.quickstart.firebasestorage.kotlin.MainActivity::class.java)),
+                Choice(
+                    "Compose",
+                    "Run the Firebase Storage quickstart written in Compose.",
+                    Intent(this, com.google.firebase.quickstart.firebasestorage.kotlin.MainComposeActivity::class.java))
         )
     }
 }

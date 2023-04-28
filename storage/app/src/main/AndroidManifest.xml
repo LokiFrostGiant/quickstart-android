@@ -10,15 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainComposeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main_compose"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".EntryChoiceActivity"
             android:exported="true">
             <intent-filter>
@@ -27,12 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".java.MainActivity"
-            android:launchMode="singleTask"></activity>
-        <activity
-            android:name=".kotlin.MainActivity"
-            android:launchMode="singleTask"></activity>
+        <activity android:name=".java.MainActivity" />
+        <activity android:name=".kotlin.MainActivity" />
+        <activity android:name=".kotlin.MainComposeActivity" />
 
         <service
             android:name=".java.MyDownloadService"
